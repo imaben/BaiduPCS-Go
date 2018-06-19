@@ -24,7 +24,7 @@ const (
 
 // ConvertFileSize 文件大小格式化输出
 func ConvertFileSize(size int64, precision ...int) string {
-	pint := "6"
+	pint := "2"
 	if len(precision) == 1 {
 		pint = fmt.Sprint(precision[0])
 	}
